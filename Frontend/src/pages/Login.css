@@ -1,0 +1,132 @@
+
+
+.login-page{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/loginFond.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Consolas', 'Lucida Console', 'Courier New', monospace;
+}
+.login-page-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5rem;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+  
+    
+}
+
+
+.login-page-container::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(249, 224, 246, 0.568);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.login-page-rectangle input{
+    margin-bottom: 7px;
+    margin-top: 5px;
+    width: 20rem;
+    height: 2.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.393);
+    
+}
+.login-page-choix{
+    width: 100%;
+}
+.login-page-choix label {
+    display: flex;
+    cursor: pointer;
+    font-size: clamp(1em,calc(1em),2em);
+    margin-right: 7px;
+    
+}
+.login-page-choix input{
+    cursor: pointer;
+     margin-right: 5px;
+   
+}
+.login-page-choix{
+    display: flex;
+    gap:10px;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.login-page-login{
+    margin: 5px 0;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: pink;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.393);
+    cursor: pointer;
+}
+.login-page-login:hover{
+    background-color: rgba(251, 153, 169, 0.596);
+    transition: 0.5s;
+}
+.login-page-redirect{
+    color: blue;
+    cursor: pointer;
+    font-weight: 900;
+}
+.login-page-redirect:hover{
+    color: maroon;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 600px) {
+    .login-page-container{
+        padding: 3rem;
+    }
+    .login-page{
+        font-size: 12px;
+    }
+
+    .login-page-rectangle input{
+        width: 15rem;
+
+        
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .login-page-container{
+        padding: 2rem 1rem;
+    }
+    .login-page{
+        font-size: 8px;
+    }
+
+    .login-page-rectangle input{
+        width: 12rem;
+        height: 2rem;
+
+        
+    }
+    
+}

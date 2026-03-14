@@ -1,0 +1,3 @@
+En tant que bonus, nous avons ajouté le "Mode Sombre / Clair" (Dark mode / Light mode). Dans notre cas, l'application est en mode sombre par défaut, nous avons donc ajouté le mode clair pour offrir le choix à l'utilisateur.
+
+De plus, nous avons ajouté des paramètres personnalisés pour rendre notre application plus attirante et jolie, permettant à chacun de créer un espace de travail qui lui ressemble.

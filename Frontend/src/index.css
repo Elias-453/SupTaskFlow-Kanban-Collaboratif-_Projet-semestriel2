@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  
+    --textShadowLight:
+    -2px -2px 0 white,
+    2px -2px 0 white,
+    -2px 2px 0 white,
+    2px 2px 0 white;
+}
+
+.light .Header-container{
+    background-color: rgb(216, 217, 218);
+}
+
+.light .Header-container h1{
+    color: #333;
+    text-shadow: var(--textShadowLight);
+}
+
+.light .Header-img{
+  border: 2px solid black;
+}
+
+.light .Header-headerSide{
+  background-color: rgb(216, 217, 218);
+  color: black;
+  
+}
+
+.light .Header-userinfos p{
+  color: whitesmoke;
+}
+
+.light .Header-bigPhoto {
+  border: 2px solid black;
+}
+
+.light .boardsNavContainer li {
+  background-color: rgb(216, 217, 218);
+  border: 2px solid black;
+  color: black;
+  text-shadow: none;
+}
+.light .columnOptionsContainer {
+    background-color: rgb(216, 217, 218);
+    border: 2px solid black;
+    color:black;
+}
+.light .columnOptionsContainer li:not(li:nth-child(1)){
+    border: 1px  solid black;
+}
+
+.light .validationContainer{
+  background-color: rgb(216, 217, 218);
+  color: black;
+  border: 2px solid black;
+  box-shadow: none;
+}
+
+.light .validationContainer button{
+  background-color: #333;
+  color: white;
+}

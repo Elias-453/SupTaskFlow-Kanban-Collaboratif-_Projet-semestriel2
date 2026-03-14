@@ -1,0 +1,15 @@
+.Toast-settings{
+    font-size: 1.5rem;
+    padding: 4rem 4rem;
+    min-width: 250px;     
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 2000px) {
+.Toast-settings{
+    font-size: 3rem;
+    padding: 4rem 4rem;
+    min-width: 900px;     
+    border-radius: 10px;
+}
+}

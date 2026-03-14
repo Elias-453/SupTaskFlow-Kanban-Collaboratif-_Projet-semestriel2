@@ -1,0 +1,23 @@
+.bodyFake{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -999;
+    margin-top:5rem;
+}
+
+.placeholderColumn{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.columnContainer {
+    touch-action: none !important; 
+    -webkit-user-select: none; 
+    user-select: none;
+}

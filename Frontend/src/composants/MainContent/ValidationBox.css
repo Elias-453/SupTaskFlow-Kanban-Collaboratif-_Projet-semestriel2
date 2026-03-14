@@ -1,0 +1,81 @@
+.validationContainer{
+    width: 35rem;
+    height: 17rem;
+    background-color: #333;
+    z-index: 999;
+    position: absolute;
+    color: whitesmoke;
+    display: flex;
+    font-size: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    border: 0.5px whitesmoke solid;
+    box-shadow: 1px 1px 1px black;
+    padding: 1.5rem;
+}
+
+.validationContainer p{
+    width: fit-content;
+    max-width: 100%;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 1.3em;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.validationButtonContainer{
+    display: flex;
+    gap: 20px;
+}
+.validationButtonContainer button{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 1px 1px 1px black;
+}
+
+.validationButtonContainer button:hover{
+    cursor: pointer;
+    background-color: rgba(128, 0, 0, 0.623);
+    color: white;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 760px) {
+.validationContainer{
+    width: 75%;
+    height: 40%;
+    padding:2rem 1rem;
+}
+
+.validationContainer p{
+    font-size: 0.8em;
+}
+
+.validationButtonContainer{
+    gap: 20px;
+}
+
+.validationButtonContainer button{
+
+    font-size: 0.8em;
+    width: 5rem;
+    height: 2rem;
+}
+
+
+
+
+}

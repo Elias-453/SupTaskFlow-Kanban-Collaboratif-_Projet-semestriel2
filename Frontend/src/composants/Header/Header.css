@@ -1,0 +1,553 @@
+
+
+:root{
+    --textShadow:
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+
+
+
+}
+
+.Header-container{
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    background-color: #333;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  1px 1px 10px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    
+}
+
+
+
+.Header-container h1{
+    color: whitesmoke;
+    font-size: clamp(1.7em,calc(10vw),2.4em);
+    font-family: 'Love Light';
+    letter-spacing: 2px;
+    text-shadow:var(--textShadow);
+
+}
+.Header-img{
+    right: 10px;
+    background-color: aqua;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid whitesmoke;
+}
+.Header-img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Header-img img:hover{
+    cursor: pointer;
+}
+.Header-pictureBigContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Header-userinfos{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.Header-userinfos p{
+    font-size: 1.7em;
+    font-weight: 400;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    text-shadow:var(--textShadow);
+}
+.Header-bigPhoto{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid whitesmoke;
+}
+
+.Header-colorBigContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Header-colorBigContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.Header-headerSide{
+    
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    justify-self: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+    background-color: #333;
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%,-45%);
+    z-index: 999;
+    
+}
+.Header-pictures{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 5px;
+
+}
+.Header-pictures img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: whitesmoke 2px solid;
+    object-fit: cover;
+}
+
+.Header-pictures img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+.Header-colors{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.Header-buble{
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    border: whitesmoke 2px solid;
+}
+.Header-buble:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+.b1 {
+    background-color: violet;
+    
+}
+.b2{
+    background-color: palevioletred;
+   
+}
+.b3{
+    background-color: purple;
+    
+}
+.b4{
+     background-color: gold;
+}
+.b5{
+   
+    background-color: orange;
+}
+.b6{
+    
+    background-color: maroon;
+    
+}
+.b7{
+    background-color: gray;
+}
+.b8{
+    background-color: black;
+     
+    
+}
+.b9{
+    background-color: cadetblue;
+}
+.b10{
+    background-color: blue;
+}
+
+
+
+.Header-pictures{
+    object-fit: contain;
+}
+.Header-headerSide label{
+    display: flex;
+    align-items: center;
+    margin:1.5rem 0;
+}
+.Header-headerSide input{
+    width: 10rem;
+    height: 2em;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 1rem;
+    
+}
+.Header-headerSide input:focus{
+    background-color: rgba(255, 255, 255, 0.737);
+}
+.headerAllBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.headerAllBtns button{
+    width: 7rem;
+    height: 2.2rem;
+    border-radius:5px;
+    border: 0;
+    box-shadow: 1px 1px 5px black;
+}
+.headerAllBtns button:hover{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Header-buttonsFirstHalf{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.Header-buttonsFirstHalf button{
+    margin-right: 10px;
+}
+.Header-buttonsFirstHalf button:hover{
+    background-color: rgba(186, 185, 185, 0.635);
+    color: white;
+    transition: 0.5s;
+}
+.deconnecte{
+    background-color: rgb(255, 33, 88);
+    color: whitesmoke;
+
+}
+.deconnecte:hover{
+    background-color:rgba(255, 33, 88, 0.578) ;
+}
+
+.themeChange{
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    font-size: 2rem;
+}
+.themeChange:hover{
+    cursor: pointer;
+    
+}
+
+
+@media screen and (min-width: 2000px) {
+
+    .Header-container{
+        padding: 2rem;
+       
+    }
+
+    .Header-container h1{
+        font-size: 4rem;
+    }
+
+    .Header-img{
+        width: 6rem;
+        height: 6rem;
+ 
+    }
+    
+
+.Header-headerSide{
+    width: fit-content;
+    height: fit-content;
+    padding: 3rem;
+ 
+}
+.Header-headerSide p {
+    font-size: 2rem;
+}
+.Header-userinfos p{
+    font-size: 4em;
+    font-weight: 700;
+    font-style: italic;
+}
+.Header-bigPhoto{
+    width:20rem;
+    height:20rem;
+    margin-bottom: 2rem;
+}
+
+.Header-pictures img{
+    margin-top:10px ;
+    margin-bottom:10px ;
+    width:5rem;
+    height:5rem;
+
+}
+.Header-buble{
+    width: 5rem;
+    height:5rem;
+    margin-top:20px ;
+    margin-bottom:10px ;
+}
+
+.Header-Label{
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+}
+.Header-Label input{
+    font-size: 1rem !important;
+    padding: 1rem;
+    width: 20rem;   
+    margin-left: 2rem;
+}
+.headerAllBtns button{
+    width: 15rem;
+    font-size: 1.5rem;
+    height: 3rem;
+    margin-top: 30px;
+
+}
+.Header-buttonsFirstHalf button{
+    margin-right: 50px;
+}
+
+}
+
+
+@media screen and (max-width: 1500px) {
+.Header-headerSide{
+    height: fit-content ;
+    justify-content: center;
+    padding: 1rem;
+    width: fit-content;
+    
+ 
+}
+
+.Header-headerSide p {
+    font-size: 1rem;
+}
+.Header-userinfos p{
+    font-size: 1.3em;
+    font-weight: 700;
+    font-style: italic;
+}
+.Header-bigPhoto{
+    width:8rem;
+    height:8rem;
+    margin-bottom: 0;
+}
+
+.Header-pictures img{
+    margin-top:0 ;
+    margin-bottom:0 ;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom:3px ;
+
+}
+.Header-buble{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top:0 ;
+    margin-bottom:5px ;
+}
+
+.Header-Label{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.Header-Label input{
+    font-size: 0.7em !important;
+    padding: 0.7rem;
+    width: 10rem;   
+    margin-left: 1.5rem;
+}
+.headerAllBtns button{
+    width: 6rem;
+    font-size: 0.8em;
+    height: 2rem;
+
+}
+
+
+}
+@media screen and (max-width: 1045px) {
+.Header-headerSide{
+    width: 80%;
+}
+}
+
+@media screen and (max-width: 800px) {
+
+
+.Header-headerSide{
+    height: fit-content ;
+    justify-content: center;
+    padding: 1.5rem;
+    width: 80%;
+ 
+}
+
+.Header-headerSide p {
+    font-size: 1rem;
+}
+.Header-userinfos p{
+    font-size: 1.3em;
+    font-weight: 700;
+    font-style: italic;
+}
+.Header-bigPhoto{
+    width:8rem;
+    height:8rem;
+    margin-bottom: 0;
+}
+
+.Header-pictures img{
+    margin-top:0 ;
+    margin-bottom:0 ;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom:3px ;
+
+}
+.Header-buble{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top:0 ;
+    margin-bottom:5px ;
+}
+
+.Header-Label{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.Header-Label input{
+    font-size: 0.7em !important;
+    padding: 0.7rem;
+    width: 10rem;   
+    margin-left: 1.5rem;
+}
+.headerAllBtns button{
+    width: 6rem;
+    font-size: 0.8em;
+    height: 2rem;
+
+}
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 680px) {
+
+
+.Header-headerSide{
+    width: 95%;
+    height: fit-content ;
+    justify-content: center;
+    padding: 1rem;
+ 
+}
+
+.Header-headerSide p {
+    font-size: 1rem;
+}
+.Header-userinfos p{
+    font-size: 1.3em;
+    font-weight: 700;
+    font-style: italic;
+}
+.Header-bigPhoto{
+    width:8rem;
+    height:8rem;
+    margin-bottom: 0;
+}
+
+.Header-pictures img{
+    margin-top:0 ;
+    margin-bottom:3px ;
+    width: 2.1rem;
+    height: 2.1rem;
+
+}
+.Header-buble{
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-top:0 ;
+     margin-bottom:3px ;
+}
+
+.Header-Label{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.Header-Label input{
+    font-size: 1em !important;
+    padding: 0.8em;
+    width: 8rem;   
+    margin-left: 2rem;
+}
+.headerAllBtns button{
+    width: fit-content;
+    padding: 0.5rem;
+    font-size: 0.8em;
+    height: 1.7rem;
+
+}
+.Header-buttonsFirstHalf button{
+    margin-right: 20px;
+}
+
+
+}
+
+@media screen and (max-width: 483px) {
+
+
+.Header-headerSide{
+    width: 95%;
+    height: fit-content ;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+
+}
